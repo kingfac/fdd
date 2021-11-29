@@ -1,0 +1,54 @@
+.white-transparent {
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+.white-transparent2 {
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+.black-transparent {
+    background-color: rgba(82, 82, 82, 0.61);
+}
+
+.green-transparent {
+    background-color: rgba(34, 114, 9, 0.534);
+}
+
+.header-title { 
+    background-color: rgba(46, 41, 1, 0.589);
+    font-variant: small-caps;
+}
+
+.header-back {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu {
+}
+.menu:hover{
+    border-right: solid 1px white;
+    border-radius: 100px 0px 0px 100px;
+}
+
+.menu-over{
+    border-right: solid 1px white;
+    border-radius: 100px 0px 0px 100px;
+    
+}
+
+.cacher {
+    transform: scale(0);
+}
+
+/* Toggle A */
+input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #48bb78;
+  }
+  
+  /* Toggle B */
+  input:checked ~ .dot {
+    transform: translateX(100%);
+    background-color: #48bb78;
+  }
