@@ -22,11 +22,11 @@
                </ul>
          </div>
     </div>
-    <div class="absolute flex flex-col top-12" style="height: 50vh;">
+    <div class="absolute flex flex-col w-full top-12" style="height: 50vh;">
         <div class="flex-1 pt-5 pl-5">
             <img src="{{asset('assets/logo/logo fdd white.png')}}" alt="" srcset="" class="h-24 ">
         </div>
-        <div class="flex items-end justify-end flex-1">
+        <div class="flex items-end justify-end flex-1 w-full">
             <p class="px-10 py-2 font-bold text-white bg-green-600">Formateurs pour un Développement Durable</p>
         </div>
     </div>
