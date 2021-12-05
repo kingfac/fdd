@@ -1,5 +1,5 @@
 <div class="flex flex-col items-center bg-gray-200 lg:pt-5" id="footer">
-    <div class="grid w-full grid-cols-1 gap-10 p-5 lg:grid-cols-3 xl:max-w-7xl lg:p-0">
+    <div class="grid w-full grid-cols-1 gap-10 p-5 lg:grid-cols-3 xl:max-w-7xl xl:p-0">
         <div class="flex flex-col text-center md:text-left">
             <h1 class="w-full py-5 text-gray-400 lg:py-10">CONTACTEZ-<b>NOUS</b></h1>
             <div class="text-justify ">

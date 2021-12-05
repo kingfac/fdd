@@ -14,8 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('pages.welcome');
+})->name('home');
+
+Route::get('/about-us/{el}', function ($el) {
+    return view('pages.about', ['el'=>$el]);
+})->name('about');
+
+Route::get('/part-don/{el}', function ($el) {
+    return view('pages.participer', ['el'=>$el]);
+})->name('part');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

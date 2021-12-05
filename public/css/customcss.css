@@ -45,10 +45,89 @@
 input:checked ~ .dot {
     transform: translateX(100%);
     background-color: #48bb78;
-  }
+}
   
   /* Toggle B */
-  input:checked ~ .dot {
+input:checked ~ .dot {
     transform: translateX(100%);
     background-color: #48bb78;
-  }
+}
+
+
+.img-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-center{
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.green2-transparent {
+    background-color: #0000007c;
+}
+
+
+
+
+/* Menu deroulant */
+
+
+/* nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+nav a:hover{
+    color: #018112;
+    border-bottom: 2px solid #018112;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+ */

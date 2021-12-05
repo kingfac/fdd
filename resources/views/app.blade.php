@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>FDD/ASBL</title>
 
         <!-- Fonts -->
         {{-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> --}}
@@ -30,11 +30,7 @@
 
     </head>
     <body class="">
-        <livewire:client.header />
-        <livewire:client.v-actu />
-        <livewire:client.v-service />
-        <livewire:client.v-partenaire />
-        <livewire:client.v-domaine />
+        @yield('client')
         <livewire:client.footer />
         <livewire:client.nav />
 
