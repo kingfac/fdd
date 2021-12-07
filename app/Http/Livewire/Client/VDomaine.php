@@ -4,12 +4,14 @@ namespace App\Http\Livewire\Client;
 
 use Livewire\Component;
 
+use App\Models\domaine;
+
 class VDomaine extends Component
 {
-    public $domaines = [1,2,3,4,5,3];
+    public $domaines;
     public function render()
     {
-        
+        $this->domaines = domaine::all();
         return view('livewire.client.v-domaine');
     }
 }

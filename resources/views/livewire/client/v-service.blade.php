@@ -4,22 +4,18 @@
             <h1 class="py-2 text-left lg:text-2xl">NOS <b>SERVICES</b></h1>
             <div class="py-2 mb-5">
                 <p class="py-2">
-                    FDD ASBL organise des services de formation suivant :
+                    FDD ASBL organise les services suivants :
                 </p>
 
                 <div class="flex flex-col gap-3">
+
+                    @foreach ($services as $serv)    
                     <p class="px-1 py-2 pl-5 text-justify border-r-8 border-green-600 shadow-lg bg-gray-50">
-                        <b>Webinar : </b>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste deserunt error laboriosam veritatis corrupti nobis
+                        <b>{{$serv->lib}} : </b>
+                        {{$serv->descri}}
                     </p>
-                    <p class="px-1 py-2 pl-5 text-justify transform border-r-8 border-green-600 shadow-lg bg-gray-50">
-                        <b>Mooc : </b>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste deserunt error laboriosam veritatis corrupti nobis
-                    </p>
-                    <p class="px-1 py-2 pl-5 text-justify transform border-r-8 border-green-600 shadow-lg bg-gray-50">
-                        <b>Formation en presentielle : </b>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste deserunt error laboriosam veritatis corrupti nobis
-                    </p>
+                    @endforeach
+                    
                 </div>
             </div>
             <button class="px-5 py-2 text-white transform bg-green-600 lg:w-1/3">En savoir plus</button>

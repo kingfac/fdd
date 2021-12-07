@@ -1,5 +1,5 @@
 @extends('app')
 
 @section('client')
-<livewire:client.about nous="{{$el}}" />
+<livewire:client.v-rapport />
 @endsection

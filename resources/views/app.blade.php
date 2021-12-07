@@ -22,8 +22,8 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link rel="stylesheet" href="{{asset('splide/css/splide.min.css')}}">
         <link rel="stylesheet" href="{{asset('css/customcss.css')}}">
-        <link rel="stylesheet" href="{{asset('css/fontawesome/css/all.css')}}">
-        <script src="{{asset('css/fontawesome/js/all.min.js')}}"></script>
+        {{-- <link rel="stylesheet" href="{{asset('css/fontawesome/css/all.css')}}"> --}}
+        {{-- <script src="{{asset('css/fontawesome/js/all.min.js')}}"></script> --}}
         <script src="{{mix('js/app.js')}}" defer></script>
         <script src="{{asset('splide/js/splide.min.js')}}"></script>
         <script src="{{asset('js/anime.js')}}"></script>

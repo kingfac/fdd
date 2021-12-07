@@ -13,7 +13,7 @@
         </div>
     </div> --}}
     <div class="flex h-screen" x-data="{
-        nav : [false, false, false, false, false, false, true, false, false, false],
+        nav : [false, false, false, true, false, false, false, false, false, false, false],
         navig(id){
             //alert(this.nav[id]);
             if(!this.nav[id]){
@@ -51,7 +51,7 @@
                 </a>
                 <a href="#" class="flex items-center w-full gap-4 text-white transition duration-200 transform border-b hover:scale-105" @click="navig(3)">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"></path></svg>
-                    <p class="flex-1 py-2">Domaines</p>
+                    <p class="flex-1 py-2">Secteurs d'activité</p>
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
                 <a href="#" class="flex items-center w-full gap-4 text-white transition duration-200 transform border-b hover:scale-105" @click="navig(4)">

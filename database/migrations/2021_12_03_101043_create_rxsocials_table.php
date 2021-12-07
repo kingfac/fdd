@@ -15,7 +15,7 @@ class CreateRxsocialsTable extends Migration
     {
         Schema::create('rxsocials', function (Blueprint $table) {
             $table->id();
-            $table->string('icon');
+            $table->text('icon');
             $table->string('lien');
             $table->string('lib');
             $table->timestamps();

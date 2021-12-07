@@ -4,12 +4,14 @@
     <div class="grid grid-cols-1 gap-6 py-5 lg:grid-cols-2">
         {{-- If your happiness depends on money, you will never be happy with yourself. --}}
         @foreach ($comptes as $cpt)
-        <div class="flex items-center justify-center gap-4 px-2 pb-4 border-b lg:border-b-0 lg:pb-0">
-            <img src="{{asset('assets/BANK/M-pesa-logo.png')}}" alt="" srcset="" class="w-20 p-2 shadow-lg sm:w-28">
+        <div class="flex items-center justify-center gap-4 px-2 pb-4 border-b lg:border-b-0 lg:pb-0">            
+            @if (Storage::exists('public/compte/'.$cpt->id.'.png'))    
+            <img src="{{asset('storage/compte/'.$cpt->id.'.png')}}?{{ rand() }}" alt="Pas d'image pour cette info" srcset="" class="w-20 p-2 shadow-lg sm:w-28">
+            @endif
             <div class="flex-1 md:flex-auto">
-                <h1 class="text-xl font-bold">MPESA</h1>
-                <p><b>Nom du compte : </b> fdd</p>
-                <p><b>Numero de compte : </b> <span class="">089 45 46 364</span></p>
+                <h1 class="text-xl font-bold">{{$cpt->nom}}</h1>
+                <p><b>Nom du compte : </b> {{$cpt->nom}}</p>
+                <p><b>Numero de compte : </b> <span class="">{{$cpt->numero}}</span></p>
             </div>
         </div>
         @endforeach

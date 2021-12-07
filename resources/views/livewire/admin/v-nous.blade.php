@@ -14,7 +14,7 @@
                 <div class="flex flex-col py-5">
                     <div class="flex flex-1 gap-5 py-5">
                         <div class="flex flex-col flex-1 gap-3">
-                            <input type="text" class="flex-1 w-full p-2 placeholder-gray-700 border-2 rounded-lg" placeholder="titreellé" id="titre" wire:model="titre">
+                            <input type="text" class="flex-1 w-full p-2 placeholder-gray-700 border-2 rounded-lg" placeholder="Titre" id="titre" wire:model="titre">
                             <input name="" id="" wire:model="sous" class="flex-1 w-full p-2 placeholder-gray-600 transition transform border rounded-lg" placeholder="sous" />
                         </div>
                         <textarea name="h" id="contenu" wire:model="contenu" class="flex-1 p-2 placeholder-gray-600 transition transform border rounded-lg" placeholder="Contenu"></textarea>

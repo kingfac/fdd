@@ -21,6 +21,10 @@ Route::get('/about-us/{el}', function ($el) {
     return view('pages.about', ['el'=>$el]);
 })->name('about');
 
+Route::get('/rapports', function () {
+    return view('pages.rapport');
+})->name('rapport');
+
 Route::get('/part-don/{el}', function ($el) {
     return view('pages.participer', ['el'=>$el]);
 })->name('part');

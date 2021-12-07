@@ -3,9 +3,9 @@
     <div class="grid w-full grid-cols-1 gap-4 px-5 py-10 lg:grid-cols-3 xl:max-w-7xl md:grid-cols-2 xl:px-0">
         @foreach ($domaines as $dom)    
         <div class="p-2 shadow-lg">
-            <h1 class="py-2"><b>Wash kjfj</b></h1>
+            <h1 class="py-2"><b>{{$dom->lib}}</b></h1>
             <hr>
-            <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex adipisci, reprehenderit quos dignissimos culpa esse modi cum </p>
+            <p class="py-2">{{$dom->descri}}</p>
             <p class="font-bold text-right text-green-400">
                 <a href="#">Voir plus...</a>
             </p>

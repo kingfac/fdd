@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class domaine extends Model
 {
-    protected $fillable = ['lib', 'descri'];
+    protected $fillable = ['lib', 'descri', 'sous'];
+    protected $casts = ['sous' => 'array'];
     use HasFactory;
 }

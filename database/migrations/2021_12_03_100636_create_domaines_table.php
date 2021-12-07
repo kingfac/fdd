@@ -17,6 +17,7 @@ class CreateDomainesTable extends Migration
             $table->id();
             $table->string('lib');
             $table->text('descri');
+            $table->json('sous')->nullable();
             $table->timestamps();
         });
     }
