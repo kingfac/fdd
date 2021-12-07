@@ -7,7 +7,7 @@
             @if (Storage::exists('public/partenaire/'.$part->id.'.png'))    
             <img src="{{asset('storage/partenaire/'.$part->id.'.png')}}?{{ rand() }}" alt="Pas d'image pour cette info" srcset="" class="h-16">
             @endif
-            <h1 class="font- ">{{$part->lib}}</h1>
+            <h1 class="font-bold ">{{$part->lib}}</h1>
         </a>
         @endforeach
         
