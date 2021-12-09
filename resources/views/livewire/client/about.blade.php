@@ -21,8 +21,8 @@
                     {{$nouss->contenu}}
                 </p>
                 <div class="flex items-center justify-end py-5">
-                    <a class="text-green-600 underline" href="{{route('about', ['el'=> ($nouss->id < 3) ? $nouss->id + 1 : 1])}}">
-                        Autres...
+                    <a class="font-bold text-green-600 border-b-2" href="{{route('about', ['el'=> ($nouss->id < 3) ? $nouss->id + 1 : 1])}}">
+                        Voir {{$suivant['titre']}} ...
                     </a>
                 </div>
             </div>
