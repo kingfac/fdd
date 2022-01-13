@@ -6,7 +6,7 @@
             @foreach ($actus as $actu)    
             <div class="flex flex-col flex-1 h-full cursor-pointer">
                 @if (strpos($actu->lien, "v=") !== false)
-                    <iframe {{-- width="560" height="315" --}} class="transition duration-200 transform lg:h-full hover:scale-125 h-72 sm:h-96" src="https://www.youtube.com/embed/{{explode('v=', $actu->lien)[1]}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe {{-- width="560" height="315" --}} class="transition duration-200 transform hover:scale-125 h-72 sm:h-96" src="https://www.youtube.com/embed/{{explode('v=', $actu->lien)[1]}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 @else
                     @if (Storage::exists('public/actu/'.$actu->id.'.png'))    
                         <img src="{{asset('storage/actu/'.$actu->id.'.png')}}?{{ rand() }}" alt="Pas d'image pour cette info" srcset="" class="transition duration-200 transform hover:scale-125">
