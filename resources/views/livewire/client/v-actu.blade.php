@@ -12,10 +12,17 @@
                         <img src="{{asset('storage/actu/'.$actu->id.'.png')}}?{{ rand() }}" alt="Pas d'image pour cette info" srcset="" class="transition duration-200 transform hover:scale-125">
                     @endif
                 @endif
-                <div class="p-2 bg-white">
-                    <h2 class="font-bold">{{$actu->titre}}</h2>
-                    <p>
-                        {{$actu->descri}}
+                <div class="relative p-2 bg-white" x-data="{descri:false}" :class="{'-top-96' : descri}">
+                    <h2 class="font-bold" >{{$actu->titre}}</h2>
+                    <p class="text-justify">
+                        {{substr($actu->descri, 0, 256)}} 
+                        @if (strlen($actu->descri) > 256)
+                            <b class="text-lg font-bold text-gray-300 underline cursor-pointer" @click="descri=!descri" x-show="!descri">Lire la suite ...</b>
+                        @endif
+                        <span class="text-justify" x-show="descri" x-transition.500ms>
+                            {{substr($actu->descri, 256, strlen($actu->descri))}} 
+                            <b class="text-lg font-bold text-gray-300 underline cursor-pointer" @click="descri=!descri">Quitter description</b>
+                        </span>
                     </p>
                 </div>
             </div>
