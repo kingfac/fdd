@@ -6,7 +6,7 @@ use Livewire\Component;
 
 use App\Models\actu;
 
-use Illiminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Storage;
 use Livewire\WithFileUploads;
 
 class VActu extends Component

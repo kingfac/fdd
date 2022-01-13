@@ -2,9 +2,10 @@
     {{-- Stop trying to control. --}}
     <div class="flex flex-col items-center justify-center gap-10 py-10 white-transparent2">
         <h1 class="py-5 text-center lg:text-2xl">ACTUALITES DU <b>MOMENT</b></h1>
-        <div class="grid w-full lg:{{(count($actus) > 0) ? 'grid-cols-2' : 'grid-cols-1'}} px-10 lg:gap-10 xl:max-w-7xl xl:px-0 grid-cols-1 gap-2">
+        <div class="lg:{{(count($actus) > 1) ? 'grid-cols-2' : 'grid-cols-1'}} px-10 lg:gap-10 xl:max-w-7xl xl:px-0 grid-cols-1 gap-2 {{(count($actus) > 1) ? 'grid' : ''}}">
             @foreach ($actus as $actu)    
             <div class="flex flex-col flex-1 h-full cursor-pointer">
+                
                 @if (strpos($actu->lien, "v=") !== false)
                     <iframe {{-- width="560" height="315" --}} class="transition duration-200 transform hover:scale-125 h-72 sm:h-96" src="https://www.youtube.com/embed/{{explode('v=', $actu->lien)[1]}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 @else
