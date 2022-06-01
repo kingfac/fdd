@@ -2,6 +2,7 @@
 
 @section('client')
 <livewire:client.v-header />
+<livewire:client.v-product />
 <livewire:client.v-actu />
 <livewire:client.v-service />
 <livewire:client.v-partenaire />
